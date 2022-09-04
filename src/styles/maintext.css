@@ -1,0 +1,42 @@
+
+.main_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+    max-width: 60rem;
+    padding-top:6rem;
+}
+
+.main_heading{
+    font-weight: 800;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.main_paragraph{
+    font-size:1.3rem;
+    text-align: center;
+    margin:0px 7.4rem;
+}
+
+/* Text animation */
+
+.paragraph-enter {
+    opacity: 0;
+    transform: translateY(100px);
+}
+.paragraph-enter-active {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: transform 500ms, opacity 800ms;
+}
+
+@media screen and (max-width:1024px) {
+    .main_heading{
+        font-size: 3.5rem;
+    }
+    .main_paragraph{
+        font-size:1.2rem;
+    }
+}
