@@ -40,3 +40,13 @@
         font-size:1.2rem;
     }
 }
+
+@media screen and (max-width:912px) {
+    .main_heading{
+        font-size: 2rem;
+    }
+    .main_paragraph{
+        font-size:1.1rem;
+        margin:0;
+    }
+}

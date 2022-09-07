@@ -4,17 +4,22 @@ import Footer from './components/Footer';
 import Bottom from './components/Bottom';
 import bg from './images/background.jpg'
 import PhoneHeader from './components/PhoneHeader';
-
+import {useState,useEffect} from 'react'
 
 function App() {
+  const [menu,toggleMenu] = useState(false)
+  useEffect(() => {
+    const body = document.querySelector('body');
+    body.style.overflow = menu ? 'hidden' : 'auto';
+  }, [menu])
   return (
     <div className="App">
       <div className="background">
         <img src={bg} alt="background" />
       </div>
-      <PhoneHeader />
+      <PhoneHeader menu={menu} toggleMenu={toggleMenu}/>
       <Header />
-      <Hero />
+      <Hero menu={menu}/>
       <Footer />
       <Bottom />
     </div>

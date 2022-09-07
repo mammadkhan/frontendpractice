@@ -2,10 +2,20 @@ import sec1 from '../images/main_1_desktop.png'
 import sec2 from '../images/main_2_desktop.png'
 import sec3 from '../images/main_3_desktop.png'
 
+import sec1m from '../images/main_1_mobile.png'
+import sec2m from '../images/main_2_mobile.png'
+import sec3m from '../images/main_3_mobile.png'
+
+
+
+
 function Glass() {
   return (
     <div className="glass">
         <section className="sec glass_sec_one">
+            <figure className="sec_img_m">
+                <img src={sec1m} alt="" />
+            </figure>
             <figure className="sec_img">
                 <img src={sec1} alt="" />
             </figure>
@@ -30,8 +40,14 @@ function Glass() {
             <figure className="sec_img r">
                 <img src={sec2} alt="" />
             </figure>
+            <figure className="sec_img_m">
+                <img src={sec2m} alt="" />
+            </figure>
         </section>
         <section className="sec glass_sec_three">
+            <figure className="sec_img_m">
+                <img src={sec3m} alt="" />
+            </figure>
             <figure className="sec_img l">
                 <img src={sec3} alt="" />
             </figure>
